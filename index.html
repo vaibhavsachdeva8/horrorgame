@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- START SCREEN -->
+<div id="startScreen" class="screen">
+  <h1>🏚️ HORROR HOUSE</h1>
+  <p>Find all cursed objects before time runs out!</p>
+  <button id="startBtn">START GAME</button>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="gameScreen" class="screen hidden">
+  <div class="hud">
+    Found: <span id="found">0</span>/6 |
+    Time: <span id="time">60</span>s
+  </div>
+
+  <div id="room">
+    <!-- Objects -->
+    <div class="item skull"></div>
+    <div class="item candle"></div>
+    <div class="item doll"></div>
+    <div class="item book"></div>
+    <div class="item key"></div>
+    <div class="item potion"></div>
+
+    <!-- Ghost -->
+    <div id="ghost"></div>
+
+    <!-- Flashlight -->
+    <div id="flashlight"></div>
+  </div>
+</div>
+
+<!-- END SCREEN -->
+<div id="endScreen" class="screen hidden">
+  <h2 id="result"></h2>
+  <button id="playAgainBtn">PLAY AGAIN</button>
+</div>
+
+<!-- Jump Scare -->
+<div id="jumpScare" class="hidden">
+  <img src="https://images.unsplash.com/photo-1605031073891-4d7a8364725b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080">
+  <audio id="scream" src="https://www.fesliyanstudios.com/play-mp3/4385"></audio>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
